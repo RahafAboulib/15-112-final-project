@@ -42,6 +42,20 @@ class Menu:
         c.create_image(300,240,image=c.image)
         home=Button(c,text="back",command=self.menu2)
         home.place(x=10,y=10)
+        labelFont = ['elephant',13,'bold']
+        description1=Label(c,text="--> Ludo is a board game in which 2-4 players can play it.",justify=LEFT,bg="gray50",fg="gold")
+        description1.config(font=labelFont)
+        description1.place(x=10,y=170)
+        descreption2=Label(c,text='''--> The board is divided into four different color parts with
+        four basesto differentiate between each player.''',justify=LEFT,bg="gray50",fg="gold")
+        #label2Font = ['times',15,'bold']
+        descreption2.config(font=labelFont)
+        descreption2.place(x=10,y=240)
+        description3=Label(c,text='''--> Each player has four tokens. in order to win, one player
+        should have all the tokens in the middle of the board.''',justify=LEFT,bg="gray50",fg="gold")
+        #label3Font = ['times',15,'bold']
+        description3.config(font=labelFont)
+        description3.place(x=10,y=320)
         
     def menu2(self):
         self.hlp.destroy()
