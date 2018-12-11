@@ -37,13 +37,13 @@ class Board:
                 elif col==12 and row==6:
                     canvas.create_rectangle(w1*col,h1*row,(w1*col)+w1,(h1*row)+h1,fill="gray61",outline=lines)
                 else:
-                    canvas.create_rectangle(w1*col,h1*row,(w1*col)+w1,(h1*row)+h1,fill="gray99",outline=lines)
+                    canvas.create_rectangle(w1*col,h1*row,(w1*col)+w1,(h1*row)+h1,fill="gray97",outline=lines)
 
                    
                 lst.append((row,col))
             self.horzLst.append(lst)
-        print self.horzLst
-        return self.horzLst
+        #print self.horzLst
+        #return self.horzLst
 
 
 
@@ -73,12 +73,12 @@ class Board:
                     canvas.create_rectangle(w1*col,h1*row,(w1*col)+w1,(h1*row)+h1,fill="gray61",outline=lines)
 
                 else:
-                    canvas.create_rectangle(w1*col,h1*row,(w1*col)+w1,(h1*row)+h1,fill="gray99",outline=lines)
+                    canvas.create_rectangle(w1*col,h1*row,(w1*col)+w1,(h1*row)+h1,fill="gray97",outline=lines)
 
                 lst.append((row,col))
             self.vertLst.append(lst)
-        print self.vertLst
-        return self.vertLst
+        #print self.vertLst
+        #return self.vertLst
 
 
     def baseColoring(self,canvas):
@@ -99,7 +99,7 @@ class Board:
         canvas.create_oval(162,576,206,620,fill="blue",outline=lines)
         #GREENBASE
         canvas.create_rectangle(414,0,690,276,fill="forest green",outline=lines)
-        canvas.create_rectangle(460, 46,644,230,fill="white",outline=lines)
+        canvas.create_rectangle(460, 46,644,230,fill="gray97",outline=lines)
         canvas.create_oval(484,70,528,114,fill="forest green",outline=lines)
         canvas.create_oval(576,70,620,114,fill="forest green",outline=lines)
         canvas.create_oval(484,162,528,206,fill="forest green",outline=lines)
@@ -116,4 +116,3 @@ class Board:
         canvas.create_polygon(276,276,276,414,345,345,fill="brown3",outline=lines)
         canvas.create_polygon(414,414,414,276,345,345,fill="gold",outline=lines)
         canvas.create_polygon(414,414,276,414,345,345,fill="blue",outline=lines)
-
