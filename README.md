@@ -1,3 +1,3 @@
-# 15-112-final-project ( Ludo star )
+# 15-112-final-project ( Ludo Game )
 
 
